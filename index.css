@@ -9,7 +9,7 @@ body {
     margin: 0;
     width: 1280px;
     height: 720px;
-    background-color: #6bade2;
+    background-color: #6b73e2;
 }
 
 main {
@@ -64,21 +64,38 @@ main {
     font-family: 'Sawarabi Mincho', serif;
 }
 
-#career {
+#self_introduction {
     clear: both;
+    float: left;
+    box-sizing: border-box;
+    padding: 50px;
+    width: 500px;
+    height: 300px;
+}
+
+#self_introduction > textarea {
+    padding: 0;
+    width: 400px;
+    height: 200px;
+    border: none;
+    resize: none;
+    font-size: 15px;
+    background-color: transparent;
+}
+
+#self_introduction > textarea:focus,
+#self_introduction > textarea:active,
+#self_introduction > textarea:hover {
+    border: none;
+    outline: none;
+}
+
+#career {
     float: left;
     box-sizing: border-box;
     width: 500px;
     height: 300px;
     background-color: bisque;
-}
-
-#self_introduction {
-    float: left;
-    box-sizing: border-box;
-    width: 500px;
-    height: 300px;
-    background-color: khaki;
 }
 
 #bottom {
