@@ -3,8 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700;800&display=swap');
-/*font-family: 'Staatliches', cursive;*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap');
 
 /* For Selector*/
 body {
@@ -46,7 +45,7 @@ main {
 
 #self_introduction {
     box-sizing: border-box;
-    padding: 0 60px 30px 60px;
+    padding: 0 60px;
     width: 400px;
     height: 200px;
 }
@@ -54,7 +53,7 @@ main {
 #self_introduction > textarea {
     padding: 0;
     width: 280px;
-    height: 170px;
+    height: 200px;
     border: none;
     resize: none;
     font-size: 18px;
@@ -72,69 +71,100 @@ main {
 #middle_box {
     float: left;
     width: 500px;
-    height: 500px;
+    height: 600px;
 }
 
-#summary {
+.subtitle {
     box-sizing: border-box;
-    padding: 19px 30px 20px 50px;
+    padding: 20px 0 4px 15px;
     width: 500px;
-    height: 220px;
-    border-bottom: 1px solid #E5E0FF;
+    height: 45px;
+    border-bottom: 1px solid #E1FFE7;
 }
 
-#summary > table {
+.subtitle > p {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    color: #E1FFE7;
+    font-family: 'Staatliches', cursive;
+}
+
+#profile {
+    box-sizing: border-box;
+    padding: 5px 30px 0 50px;
+    width: 500px;
+    height: 155px;
+}
+
+#work_experience,
+#award {
+    box-sizing: border-box;
+    padding: 5px 10px 0 50px;
+    width: 500px;
+    height: 155px;
+}
+
+#profile > table,
+#work_experience > table,
+#award > table {
     border-collapse: collapse;
 }
 
-.summary_first_cell {
+.profile_first_cell {
     box-sizing: border-box;
     padding: 0;
     width: 130px;
-    height: 36px;
-    font-size: 20px;
+    height: 32px;
+    font-size: 18px;
     font-weight: 700;
-    font-family: 'Baloo Da 2', cursive;
+    font-family: 'Roboto', sans-serif;
 }
 
-.summary_second_cell {
+.profile_second_cell {
     box-sizing: border-box;
     padding: 0;
     padding-left: 20px;
-    width: 270px;
-    height: 35px;
+    width: 260px;
+    height: 32px;
     font-family: 'Sawarabi Mincho', serif;
 }
 
-#career {
-    box-sizing: border-box;
-    padding: 20px 50px 19px 50px;
-    width: 500px;
-    height: 190px;
-    border-bottom: 1px solid #E5E0FF;
-}
-
-#award {
-    box-sizing: border-box;
-    padding: 20px 50px;
-    width: 500px;
-    height: 190px;
-}
-
-.career_award_first_cell {
+.work_first_cell {
     box-sizing: border-box;
     padding: 0;
     width: 150px;
-    height: 30px;
-    font-family: 'Baloo Da 2', cursive;
+    height: 32px;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
 }
 
-.career_award_second_cell {
+.work_second_cell {
     box-sizing: border-box;
     padding: 0;
     padding-left: 20px;
-    width: 270px;
-    height: 30px;
+    width: 290px;
+    height: 32px;
+    font-family: 'Sawarabi Mincho', serif;
+}
+
+.award_first_cell {
+    box-sizing: border-box;
+    padding: 0;
+    width: 100px;
+    height: 32px;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+}
+
+.award_second_cell {
+    box-sizing: border-box;
+    padding: 0;
+    padding-left: 20px;
+    width: 340px;
+    height: 32px;
     font-family: 'Sawarabi Mincho', serif;
 }
 
