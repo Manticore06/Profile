@@ -3,6 +3,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700;800&display=swap');
+/*font-family: 'Staatliches', cursive;*/
 
 /* For Selector*/
 body {
@@ -75,46 +77,65 @@ main {
 
 #summary {
     box-sizing: border-box;
-    padding: 25px 60px 12.5px 60px;
+    padding: 19px 30px 20px 50px;
     width: 500px;
-    height: 237.5px;
-    border-bottom: 1px solid grey;
+    height: 220px;
+    border-bottom: 1px solid #E5E0FF;
 }
 
 #summary > table {
     border-collapse: collapse;
 }
 
-.first_cell {
+.summary_first_cell {
     box-sizing: border-box;
-    padding-left: 20px;
-    width: 125px;
-    height: 40px;
+    padding: 0;
+    width: 130px;
+    height: 36px;
     font-size: 20px;
-    font-family: 'Staatliches', cursive;
+    font-weight: 700;
+    font-family: 'Baloo Da 2', cursive;
 }
 
-.second_cell {
+.summary_second_cell {
     box-sizing: border-box;
+    padding: 0;
     padding-left: 20px;
-    width: 275px;
-    height: 40px;
+    width: 270px;
+    height: 35px;
     font-family: 'Sawarabi Mincho', serif;
 }
 
 #career {
     box-sizing: border-box;
-    padding: 12.5px 60px;
+    padding: 20px 50px 19px 50px;
     width: 500px;
-    height: 175px;
-    border-bottom: 1px solid grey;
+    height: 190px;
+    border-bottom: 1px solid #E5E0FF;
 }
 
 #award {
     box-sizing: border-box;
-    padding: 12.5px 60px 25px 60px;
+    padding: 20px 50px;
     width: 500px;
-    height: 187.5px;
+    height: 190px;
+}
+
+.career_award_first_cell {
+    box-sizing: border-box;
+    padding: 0;
+    width: 150px;
+    height: 30px;
+    font-family: 'Baloo Da 2', cursive;
+}
+
+.career_award_second_cell {
+    box-sizing: border-box;
+    padding: 0;
+    padding-left: 20px;
+    width: 270px;
+    height: 30px;
+    font-family: 'Sawarabi Mincho', serif;
 }
 
 #right_box {
