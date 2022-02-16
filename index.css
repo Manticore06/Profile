@@ -9,7 +9,6 @@ body {
     margin: 0;
     width: 1280px;
     height: 720px;
-    background-color: #6b73e2;
 }
 
 main {
@@ -19,28 +18,67 @@ main {
     transform: translate(-50%, -50%);
     width: 1000px;
     height: 650px;
+    border-radius: 20px;
+    box-shadow: 15px 15px 10px grey;
+    background-color: #6b73e2;
+}
+
+#left_box {
+    float: left;
+    width: 400px;
+    height: 600px;
 }
 
 #picture {
     display: block;
     box-sizing: border-box;
-    float: left;
-    padding: 30px 160px;
-    width: 500px;
-    height: 300px;
+    padding: 60px 95px;
+    width: 400px;
+    height: 400px;
 }
 
 #picture > img {
-    width: 180px;
-    height: 240px;
+    width: 210px;
+    height: 280px;
+}
+
+#self_introduction {
+    box-sizing: border-box;
+    padding: 0 60px 30px 60px;
+    width: 400px;
+    height: 200px;
+}
+
+#self_introduction > textarea {
+    padding: 0;
+    width: 280px;
+    height: 170px;
+    border: none;
+    resize: none;
+    font-size: 18px;
+    word-break: break-all;
+    background-color: transparent;
+}
+
+#self_introduction > textarea:focus,
+#self_introduction > textarea:active,
+#self_introduction > textarea:hover {
+    border: none;
+    outline: none;
+}
+
+#middle_box {
+    float: left;
+    width: 500px;
+    height: 500px;
 }
 
 #summary {
     box-sizing: border-box;
-    float: left;
-    padding: 50px;
+    padding: 25px 60px 12.5px 60px;
     width: 500px;
-    height: 300px;
+    height: 237.5px;
+    border-bottom: 1px solid grey;
 }
 
 #summary > table {
@@ -64,38 +102,25 @@ main {
     font-family: 'Sawarabi Mincho', serif;
 }
 
-#self_introduction {
-    clear: both;
-    float: left;
-    box-sizing: border-box;
-    padding: 50px;
-    width: 500px;
-    height: 300px;
-}
-
-#self_introduction > textarea {
-    padding: 0;
-    width: 400px;
-    height: 200px;
-    border: none;
-    resize: none;
-    font-size: 15px;
-    background-color: transparent;
-}
-
-#self_introduction > textarea:focus,
-#self_introduction > textarea:active,
-#self_introduction > textarea:hover {
-    border: none;
-    outline: none;
-}
-
 #career {
-    float: left;
     box-sizing: border-box;
+    padding: 12.5px 60px;
     width: 500px;
-    height: 300px;
-    background-color: bisque;
+    height: 175px;
+    border-bottom: 1px solid grey;
+}
+
+#award {
+    box-sizing: border-box;
+    padding: 12.5px 60px 25px 60px;
+    width: 500px;
+    height: 187.5px;
+}
+
+#right_box {
+    float: left;
+    width: 100px;
+    height: 600px;
 }
 
 #bottom {
