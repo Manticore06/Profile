@@ -7,22 +7,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
 /* For Selector*/
 body {
     margin: 0;
-    width: 1280px;
-    height: 720px;
+    background-color: rgb(35, 35, 35);
 }
 
 main {
-    position: absolute;
+    /* position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
     width: 1000px;
     height: 650px;
     border-radius: 20px;
-    box-shadow: 15px 15px 10px grey;
     background-color: #7880FB;
 }
 

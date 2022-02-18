@@ -10,7 +10,36 @@
     </head>
 
     <body>
-        <main>
+        <main onresize="">
+            <script>
+                function resize() {
+                    let innerWidth = window.innerWidth;
+                    let innerHeight = window.innerHeight;
+
+                    const main = document.querySelector('main');
+
+                    let mainWidth = main.offsetWidth;
+                    let mainHeight = main.offsetHeight;
+
+                    let widthDiff = innerWidth - mainWidth;
+                    let heightDiff = innerHeight - mainHeight;
+
+                    if (widthDiff >= 0 || heightDiff >= 0) {
+                        main.style.position = "absolute";
+
+                        if (widthDiff >= 0) {
+                            main.style.left = '' + widthDiff / 2 + 'px';
+                        }
+                        if (heightDiff >= 0) {
+                            main.style.top = '' + heightDiff / 2 + 'px';
+                        }
+                    }
+                }
+
+                window.onload = function () {resize();}
+                window.onresize = function () {resize();}
+            </script>
+
             <div id="left_box">
                 <div id="picture">
                     <img src="sample.png" alt="Your Picture">
