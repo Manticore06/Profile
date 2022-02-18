@@ -10,7 +10,7 @@
     </head>
 
     <body>
-        <main onresize="">
+        <main>
             <script>
                 function resize() {
                     let innerWidth = window.innerWidth;
@@ -24,19 +24,21 @@
                     let widthDiff = innerWidth - mainWidth;
                     let heightDiff = innerHeight - mainHeight;
 
-                    if (widthDiff >= 0 || heightDiff >= 0) {
-                        main.style.position = "absolute";
+                    main.style.position = "absolute";
 
-                        if (widthDiff >= 0) {
-                            main.style.left = '' + widthDiff / 2 + 'px';
-                        }
-                        if (heightDiff >= 0) {
-                            main.style.top = '' + heightDiff / 2 + 'px';
-                        }
+                    if (widthDiff > 0) {
+                        main.style.left = '' + widthDiff / 2 + 'px';
+                    } else {
+                        main.style.left = '0px';
+                    }
+                    if (heightDiff > 0) {
+                        main.style.top = '' + heightDiff / 2 + 'px';
+                    } else {
+                        main.style.top = '0px';
                     }
                 }
 
-                window.onload = function () {resize();}
+                resize();
                 window.onresize = function () {resize();}
             </script>
 
